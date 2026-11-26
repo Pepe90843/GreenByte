@@ -13,7 +13,10 @@ Abre `index.html` en un navegador moderno. No hay paso de compilación ni depend
 - `html/registro.html`: formulario de registro de muestra (no crea cuentas).
 - `html/perfil.html`, `html/necesidades.html`, `html/apoyos.html`: recorrido de selección de perfil y apoyos.
 - `html/inicio.html`, `html/historia.html`: pantallas principales de la app.
-- `css/style.css`: identidad visual, diseño adaptable y animaciones.
+- `css/style.css`: colores, tipografía, botones y estilos comunes.
+- `css/landing.css`: bienvenida.
+- `css/flow.css`: guía, registro y selección de apoyos.
+- `css/app.css`: inicio e historia.
 - `js/script.js`: interacciones del prototipo.
 - `docs/README.md`: guía del producto, diseño y límites de la demo.
 - `AGENTS.md`: contexto y pautas para colaborar en el repositorio.

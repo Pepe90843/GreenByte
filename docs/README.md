@@ -22,7 +22,10 @@ Abre `index.html` directamente en un navegador moderno o sirve la carpeta raíz 
 | `html/apoyos.html` | Resumen informativo de apoyos |
 | `html/inicio.html` | Inicio, accesos, agenda de muestra y emergencias |
 | `html/historia.html` | Ejemplo de historia y logros personales |
-| `css/style.css` | Paleta, componentes, breakpoints, estados y movimiento |
+| `css/style.css` | Colores, tipografía, botones y estilos compartidos |
+| `css/landing.css` | Pantalla de bienvenida |
+| `css/flow.css` | Guía, registro, selección de perfil, necesidades y apoyos |
+| `css/app.css` | Pantallas de inicio e historia |
 | `js/script.js` | Interacciones sencillas de formularios, selección y recordatorios |
 | `img/` | Imágenes de referencia del producto |
 

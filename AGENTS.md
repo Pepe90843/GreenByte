@@ -16,7 +16,10 @@ Este repositorio contiene CuidaMe, un prototipo web de apoyo cotidiano para pers
 
 - `index.html`: bienvenida.
 - `html/`: guía, registro de muestra, selección de perfil/necesidades, apoyos, inicio e historia.
-- `css/style.css`: estilos y breakpoints.
+- `css/style.css`: estilos comunes.
+- `css/landing.css`: estilos de la bienvenida.
+- `css/flow.css`: guía, registro y selección de apoyos.
+- `css/app.css`: pantallas de inicio e historia.
 - `js/script.js`: interacciones del lado del cliente.
 - `docs/README.md`: documentación funcional y validación manual.
 - No hay framework ni paso de compilación. Se puede abrir `index.html` en un navegador moderno.
