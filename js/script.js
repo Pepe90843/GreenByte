@@ -1,8 +1,12 @@
-// Muestra mensajes breves cuando se realiza una accion.
+// Muestra un mensaje breve después de una acción.
 let temporizadorMensaje;
 
 function mostrarMensaje(texto) {
   const mensaje = document.querySelector('#toast');
+
+  if (!mensaje) {
+    return;
+  }
 
   mensaje.textContent = texto;
   mensaje.classList.add('is-visible');
@@ -13,81 +17,68 @@ function mostrarMensaje(texto) {
   }, 2800);
 }
 
-// Al pulsar una tarjeta, se anade o se quita de la lista de apoyos.
-const tarjetasApoyo = document.querySelectorAll('.care-card');
+// Comprueba el formulario de muestra sin enviar ni guardar los datos.
+const formularioRegistro = document.querySelector('#registro-form');
 
-tarjetasApoyo.forEach(function (tarjeta) {
-  tarjeta.addEventListener('click', function () {
-    const estaSeleccionada = tarjeta.getAttribute('aria-pressed') === 'true';
-    const nuevaSeleccion = !estaSeleccionada;
-    const textoAccion = tarjeta.querySelector('.care-card-action');
+if (formularioRegistro) {
+  formularioRegistro.addEventListener('submit', function (evento) {
+    evento.preventDefault();
 
-    tarjeta.setAttribute('aria-pressed', nuevaSeleccion);
+    const contrasena = document.querySelector('#contrasena').value;
+    const confirmar = document.querySelector('#confirmar').value;
+    const mensaje = document.querySelector('#registro-mensaje');
 
-    if (nuevaSeleccion) {
-      textoAccion.firstChild.textContent = 'Añadido a mis apoyos ';
-      mostrarMensaje(tarjeta.dataset.care + ' añadido a tus apoyos.');
+    if (contrasena !== confirmar) {
+      mensaje.textContent = 'Las contraseñas no coinciden.';
     } else {
-      textoAccion.firstChild.textContent = 'Añadir a mis apoyos ';
-      mostrarMensaje(tarjeta.dataset.care + ' eliminado de tus apoyos.');
+      mensaje.textContent = 'Formulario de ejemplo correcto. No se ha creado ninguna cuenta.';
+      formularioRegistro.reset();
+    }
+  });
+}
+
+// Marca la tarjeta de perfil que se ha elegido.
+const opcionesPerfil = document.querySelectorAll('.profile-option input');
+
+opcionesPerfil.forEach(function (opcion) {
+  opcion.addEventListener('change', function () {
+    opcionesPerfil.forEach(function (otraOpcion) {
+      otraOpcion.parentElement.classList.remove('is-selected');
+    });
+
+    opcion.parentElement.classList.add('is-selected');
+  });
+});
+
+// Resalta las necesidades marcadas.
+const opcionesNecesidad = document.querySelectorAll('.need-option input');
+
+opcionesNecesidad.forEach(function (opcion) {
+  opcion.addEventListener('change', function () {
+    if (opcion.checked) {
+      opcion.parentElement.classList.add('is-selected');
+    } else {
+      opcion.parentElement.classList.remove('is-selected');
     }
   });
 });
 
-// El selector de perfil cambia el texto y el boton marcado.
-const opcionesPerfil = document.querySelectorAll('.role-option');
-
-opcionesPerfil.forEach(function (opcion) {
-  opcion.addEventListener('click', function () {
-    opcionesPerfil.forEach(function (otraOpcion) {
-      otraOpcion.classList.remove('is-selected');
-      otraOpcion.setAttribute('aria-pressed', 'false');
-    });
-
-    opcion.classList.add('is-selected');
-    opcion.setAttribute('aria-pressed', 'true');
-    document.querySelector('#role-summary').textContent = opcion.dataset.role;
-    mostrarMensaje('Experiencia personalizada: ' + opcion.dataset.role.toLowerCase() + '.');
-  });
-});
-
-// Anade un recordatorio de ejemplo a la agenda.
+// Añade un recordatorio de ejemplo en la pantalla de inicio.
 const botonRecordatorio = document.querySelector('#add-reminder');
 
-botonRecordatorio.addEventListener('click', function () {
-  const listaAgenda = document.querySelector('#agenda-list');
-  const nuevoRecordatorio = document.createElement('article');
+if (botonRecordatorio) {
+  botonRecordatorio.addEventListener('click', function () {
+    const listaAgenda = document.querySelector('#agenda-list');
+    const recordatorio = document.createElement('article');
 
-  nuevoRecordatorio.classList.add('agenda-item');
-  nuevoRecordatorio.innerHTML =
-    '<span class="agenda-time">Nuevo</span>' +
-    '<span class="agenda-marker marker-teal" aria-hidden="true">＋</span>' +
-    '<div class="agenda-copy"><strong>Tu nuevo recordatorio</strong>' +
-    '<small>Recuerda reservar un momento para ti</small></div>' +
-    '<span class="agenda-status">Personal</span>';
+    recordatorio.classList.add('home-event');
+    recordatorio.innerHTML =
+      '<span class="event-date">HOY<br><strong>Nuevo</strong></span>' +
+      '<span class="event-symbol">♡</span>' +
+      '<div><h3>Un nuevo recordatorio</h3>' +
+      '<p>Recuerda reservar un momento para ti</p></div>';
 
-  listaAgenda.appendChild(nuevoRecordatorio);
-  mostrarMensaje('Recordatorio añadido a tu agenda.');
-});
-
-// Mantiene marcada la opcion de navegacion que se ha pulsado.
-const enlacesNavegacion = document.querySelectorAll('.nav-link, .mobile-nav-link');
-
-enlacesNavegacion.forEach(function (enlace) {
-  enlace.addEventListener('click', function () {
-    enlacesNavegacion.forEach(function (otroEnlace) {
-      otroEnlace.classList.remove('is-active');
-      otroEnlace.removeAttribute('aria-current');
-    });
-
-    const enlacesDestino = document.querySelectorAll(
-      '.nav-link[href="' + enlace.getAttribute('href') + '"], ' +
-      '.mobile-nav-link[href="' + enlace.getAttribute('href') + '"]'
-    );
-
-    enlacesDestino.forEach(function (enlaceDestino) {
-      enlaceDestino.classList.add('is-active');
-      enlaceDestino.setAttribute('aria-current', 'page');
-    });
+    listaAgenda.appendChild(recordatorio);
+    mostrarMensaje('Recordatorio añadido a tu agenda.');
   });
-});
+}

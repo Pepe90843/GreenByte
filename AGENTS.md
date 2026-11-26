@@ -2,7 +2,7 @@
 
 ## Producto
 
-Este repositorio contiene CuidaMe, un prototipo web de apoyo cotidiano para personas con movilidad reducida, familiares y profesionales. La referencia de producto y estética está en `Bocetos_con_IA/`. El tono debe ser cálido, respetuoso, claro y centrado en la autonomía de la persona.
+Este repositorio contiene CuidaMe, un prototipo web de apoyo cotidiano para personas con movilidad reducida, familiares y profesionales. La referencia de producto y estética está en `img/`. El tono debe ser cálido, respetuoso, claro y centrado en la autonomía de la persona.
 
 ## Pautas de interfaz
 
@@ -14,7 +14,8 @@ Este repositorio contiene CuidaMe, un prototipo web de apoyo cotidiano para pers
 
 ## Estructura y ejecución
 
-- `index.html`: página de entrada y estructura de la interfaz.
+- `index.html`: bienvenida.
+- `html/`: guía, registro de muestra, selección de perfil/necesidades, apoyos, inicio e historia.
 - `css/style.css`: estilos y breakpoints.
 - `js/script.js`: interacciones del lado del cliente.
 - `docs/README.md`: documentación funcional y validación manual.
@@ -24,5 +25,5 @@ Este repositorio contiene CuidaMe, un prototipo web de apoyo cotidiano para pers
 ## Cambios y validación
 
 - Mantén los cambios acotados y respeta las interacciones existentes.
-- Comprueba a mano selección de apoyos, selector de perfil, alta de recordatorios, navegación con teclado y visualización a tamaños móvil/tablet/escritorio.
+- Comprueba a mano navegación entre pantallas, selección de necesidades, validación de registro de muestra, alta de recordatorios, teclado y visualización en móvil/tablet/escritorio.
 - No añadas dependencias ni servicios externos sin necesidad; si cambias la carga de fuentes, conserva una alternativa de sistema.

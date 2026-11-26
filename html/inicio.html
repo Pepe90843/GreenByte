@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6ef">
+  <title>Inicio — CuidaMe</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="dashboard-page">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="dashboard-header">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">♡</span><span class="brand-name">Cuida<span>Me</span><small>Tu apoyo, siempre contigo</small></span></a>
+    <nav class="dashboard-links" aria-label="Navegación principal">
+      <a class="is-current" href="inicio.html">Inicio</a>
+      <a href="historia.html">Mi historia</a>
+      <a href="apoyos.html">Cuidados</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+    <a class="avatar" href="perfil.html" aria-label="Mi perfil">M</a>
+  </header>
+  <main id="contenido" class="dashboard-main">
+    <section class="dashboard-welcome">
+      <div><p class="eyebrow">HOY, A TU MANERA</p><h1>¡Bienvenido/a a CuidaMe!</h1><p>Estamos aquí para acompañarte. ¿Qué te gustaría hacer hoy?</p></div>
+      <span class="dashboard-sun" aria-hidden="true">☀</span>
+    </section>
+    <section class="home-shortcuts" aria-label="Accesos rápidos">
+      <a href="apoyos.html"><span aria-hidden="true">♿</span>Rampas y accesos</a>
+      <a href="apoyos.html"><span aria-hidden="true">▰</span>Transporte adaptado</a>
+      <a href="historia.html"><span aria-hidden="true">✿</span>Espacios abiertos</a>
+      <a href="apoyos.html"><span aria-hidden="true">♡</span>Asistencia personal</a>
+    </section>
+    <section class="emergency-panel" aria-labelledby="emergency-title">
+      <div><p class="eyebrow">SI HAY UNA EMERGENCIA REAL</p><h2 id="emergency-title">Pide ayuda de inmediato</h2><p>Si necesitas asistencia urgente, llama al teléfono de emergencias.</p></div>
+      <a class="emergency-call" href="tel:112"><span aria-hidden="true">☎</span><strong>Llamar al 112</strong><small>Emergencias</small></a>
+    </section>
+    <section id="agenda" class="dashboard-agenda">
+      <div class="section-heading"><div><p class="eyebrow">UN DÍA A LA VEZ</p><h2>Recordatorios de ejemplo</h2></div><a class="text-link" href="apoyos.html">Mis apoyos →</a></div>
+      <div id="agenda-list">
+        <article class="home-event"><span class="event-date">HOY<br><strong>09:30</strong></span><span class="event-symbol">♡</span><div><h3>Un momento para ti</h3><p>Tu rutina de bienestar</p></div></article>
+        <article class="home-event"><span class="event-date">HOY<br><strong>11:00</strong></span><span class="event-symbol gold-symbol">▦</span><div><h3>Revisar próximas citas</h3><p>Un recordatorio amable</p></div></article>
+      </div>
+      <button id="add-reminder" class="add-reminder" type="button"><span aria-hidden="true">+</span> Añadir un recordatorio de ejemplo</button>
+    </section>
+    <section class="dashboard-story"><div><p class="eyebrow">TU HISTORIA IMPORTA</p><h2>Lo que te hace ser tú.</h2><p>Tus gustos, tus logros y las pequeñas cosas que te hacen bien.</p></div><a class="button button-outline" href="historia.html">Ver mi historia →</a></section>
+    <p class="prototype-note">Los recordatorios son de muestra y solo existen mientras esta página está abierta.</p>
+  </main>
+  <nav class="bottom-nav" aria-label="Navegación móvil">
+    <a class="is-current" href="inicio.html"><span aria-hidden="true">⌂</span><small>Inicio</small></a>
+    <a href="historia.html"><span aria-hidden="true">♡</span><small>Historia</small></a>
+    <a href="apoyos.html"><span aria-hidden="true">✳</span><small>Cuidados</small></a>
+    <a href="#agenda"><span aria-hidden="true">▦</span><small>Agenda</small></a>
+    <a href="perfil.html"><span aria-hidden="true">○</span><small>Perfil</small></a>
+  </nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../js/script.js" defer></script>
+</body>
+</html>

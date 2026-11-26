@@ -1,6 +1,6 @@
 # CuidaMe
 
-CuidaMe es un prototipo web accesible para organizar apoyos cotidianos, recordatorios y recursos para personas con movilidad reducida y sus redes de apoyo. La interfaz se inspira en los bocetos incluidos en [`Bocetos_con_IA/`](Bocetos_con_IA/).
+CuidaMe es un prototipo web accesible para organizar apoyos cotidianos, recordatorios y recursos para personas con movilidad reducida y sus redes de apoyo. La interfaz se inspira en las imágenes de referencia incluidas en [`img/`](img/).
 
 ## Empezar
 
@@ -8,11 +8,15 @@ Abre `index.html` en un navegador moderno. No hay paso de compilación ni depend
 
 ## Estructura
 
-- `index.html`: página y contenido accesible de la experiencia.
+- `index.html`: bienvenida y entrada principal.
+- `html/guia.html`: guía visual.
+- `html/registro.html`: formulario de registro de muestra (no crea cuentas).
+- `html/perfil.html`, `html/necesidades.html`, `html/apoyos.html`: recorrido de selección de perfil y apoyos.
+- `html/inicio.html`, `html/historia.html`: pantallas principales de la app.
 - `css/style.css`: identidad visual, diseño adaptable y animaciones.
 - `js/script.js`: interacciones del prototipo.
 - `docs/README.md`: guía del producto, diseño y límites de la demo.
 - `AGENTS.md`: contexto y pautas para colaborar en el repositorio.
-- `Bocetos_con_IA/`: material de referencia visual.
+- `img/`: imágenes de referencia visual.
 
-Consulta [`docs/README.md`](docs/README.md) para conocer las interacciones disponibles y las comprobaciones manuales recomendadas.
+Las pantallas se conectan con enlaces HTML normales. Consulta [`docs/README.md`](docs/README.md) para conocer las interacciones y los límites del prototipo.

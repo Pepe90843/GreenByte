@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6ef">
+  <title>Crear cuenta — CuidaMe</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="public-header">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">♡</span><span class="brand-name">Cuida<span>Me</span><small>Tu apoyo, siempre contigo</small></span></a>
+    <a class="text-link" href="../index.html">← Volver</a>
+  </header>
+  <main id="contenido" class="screen-page narrow-page">
+    <section class="form-card">
+      <p class="eyebrow">EMPIEZA A TU RITMO</p>
+      <h1>Crear una cuenta</h1>
+      <p class="screen-intro">En un servicio real, aquí podrías registrarte. Este prototipo no crea cuentas ni envía tus datos.</p>
+      <form id="registro-form">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required>
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com" required>
+        <label for="contrasena">Contraseña</label>
+        <input id="contrasena" name="contrasena" type="password" autocomplete="new-password" minlength="8" placeholder="Al menos 8 caracteres" required>
+        <label for="confirmar">Confirmar contraseña</label>
+        <input id="confirmar" name="confirmar" type="password" autocomplete="new-password" minlength="8" placeholder="Escribe de nuevo la contraseña" required>
+        <label class="terms-check"><input type="checkbox" required> <span>Acepto los términos y la política de privacidad (texto de ejemplo).</span></label>
+        <button class="button button-primary form-submit" type="submit">Probar registro</button>
+      </form>
+      <p id="registro-mensaje" class="form-message" role="status" aria-live="polite"></p>
+      <p class="form-footnote">¿Solo quieres ver la app? <a href="inicio.html">Entrar como visitante</a></p>
+    </section>
+  </main>
+  <script src="../js/script.js" defer></script>
+</body>
+</html>

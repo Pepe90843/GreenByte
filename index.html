@@ -4,166 +4,48 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f6ef">
-  <meta name="description" content="CuidaMe: apoyo cercano para organizar tus cuidados y sentirte acompañado cada día.">
+  <meta name="description" content="CuidaMe te ayuda a organizar los apoyos y cuidados de cada día.">
   <title>CuidaMe — Tu apoyo, siempre contigo</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="public-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">♡</span>
+      <span class="brand-name">Cuida<span>Me</span><small>Tu apoyo, siempre contigo</small></span>
+    </a>
+    <nav class="public-nav" aria-label="Navegación">
+      <a href="html/guia.html">Conoce CuidaMe</a>
+      <a class="button button-outline" href="html/registro.html">Crear cuenta</a>
+    </nav>
+  </header>
 
-  <div class="app-shell">
-    <aside class="sidebar" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="CuidaMe, ir al inicio">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48"><path d="M24 41S6 31 6 18a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 13-18 23-18 23Z"/><path d="M17 25h5l3-7 4 13 3-6h5"/></svg>
-        </span>
-        <span class="brand-name">Cuida<span>Me</span><small>Tu apoyo, siempre contigo</small></span>
-      </a>
-
-      <p class="nav-caption">MENÚ</p>
-      <nav class="side-nav">
-        <a class="nav-link is-active" href="#inicio" aria-current="page"><span class="nav-icon" aria-hidden="true">⌂</span>Inicio</a>
-        <a class="nav-link" href="#historia"><span class="nav-icon" aria-hidden="true">♡</span>Mi historia</a>
-        <a class="nav-link" href="#cuidados"><span class="nav-icon" aria-hidden="true">✳</span>Cuidados</a>
-        <a class="nav-link" href="#agenda"><span class="nav-icon" aria-hidden="true">▦</span>Agenda</a>
-        <a class="nav-link" href="#perfil"><span class="nav-icon" aria-hidden="true">○</span>Mi perfil</a>
-      </nav>
-
-      <div class="sidebar-help">
-        <span class="help-spark" aria-hidden="true">✦</span>
-        <p><strong>Estamos contigo</strong><br>Un pequeño paso cada día.</p>
-        <a href="#ayuda" class="text-link">Ver ayuda <span aria-hidden="true">→</span></a>
-      </div>
-      <p class="sidebar-note">Hecho con cariño y respeto.</p>
-    </aside>
-
-    <main id="contenido" class="main-content">
-      <header class="topbar">
-        <div class="mobile-brand" aria-label="CuidaMe">Cuida<span>Me</span></div>
-        <p class="topbar-greeting">Un espacio pensado para ti</p>
-        <a class="profile-chip" href="#perfil">
-          <span class="avatar" aria-hidden="true">M</span>
-          <span class="profile-chip-copy"><strong>Mi espacio</strong><small>Personalízalo a tu ritmo</small></span>
-          <span class="profile-chevron" aria-hidden="true">⌄</span>
-        </a>
-      </header>
-
-      <div class="page-wrap">
-        <section id="inicio" class="welcome-section" aria-labelledby="welcome-title">
-          <div class="welcome-copy">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> HOY, A TU MANERA</p>
-            <h1 id="welcome-title">Cuidar también es<br><span>sentirse acompañado.</span></h1>
-            <p class="welcome-description">Organiza lo importante, encuentra apoyo y dedica tu energía a lo que te hace bien.</p>
-            <div class="welcome-actions">
-              <a class="button button-primary" href="#cuidados">Descubrir mi ayuda <span aria-hidden="true">→</span></a>
-              <a class="button button-quiet" href="#historia"><span class="play-icon" aria-hidden="true">▶</span> Conoce CuidaMe</a>
-            </div>
-            <div class="welcome-trust"><span class="trust-avatars" aria-hidden="true"><i>M</i><i>A</i><i>+</i></span><span>Un lugar seguro para ti y tu red de apoyo</span></div>
-          </div>
-          <div class="welcome-art" aria-label="Ilustración de una familia acompañando a una persona">
-            <div class="art-orbit orbit-one"></div>
-            <div class="art-orbit orbit-two"></div>
-            <span class="art-heart heart-one" aria-hidden="true">♥</span>
-            <span class="art-heart heart-two" aria-hidden="true">♥</span>
-            <div class="art-image-frame">
-              <img src="Bocetos_con_IA/IMG_0583.png" alt="Familia reunida alrededor de una persona usuaria de silla de ruedas, bajo el nombre CuidaMe" width="1440" height="1390">
-            </div>
-            <span class="art-caption"><span class="caption-dot"></span> Aquí, para lo que necesites</span>
-          </div>
-          <span class="welcome-decoration decoration-heart" aria-hidden="true">♡</span>
-        </section>
-
-        <section class="quick-strip" aria-label="Accesos rápidos">
-          <a href="#cuidados" class="quick-item"><span class="quick-icon icon-sage" aria-hidden="true">✳</span><span><strong>Apoyo a tu medida</strong><small>Elige lo que necesitas</small></span><span class="quick-arrow" aria-hidden="true">↗</span></a>
-          <a href="#agenda" class="quick-item"><span class="quick-icon icon-gold" aria-hidden="true">▦</span><span><strong>Todo en orden</strong><small>Citas y tareas importantes</small></span><span class="quick-arrow" aria-hidden="true">↗</span></a>
-          <a href="#ayuda" class="quick-item"><span class="quick-icon icon-coral" aria-hidden="true">♡</span><span><strong>No estás a solas</strong><small>Cuenta con tu gente</small></span><span class="quick-arrow" aria-hidden="true">↗</span></a>
-        </section>
-
-        <section id="cuidados" class="content-section care-section" aria-labelledby="care-title">
-          <div class="section-heading">
-            <div><p class="eyebrow">PEQUEÑOS APOYOS, GRAN DIFERENCIA</p><h2 id="care-title">¿Qué te haría el día más fácil?</h2><p class="section-subtitle">Marca las opciones que te interesan. Puedes cambiarlas cuando quieras.</p></div>
-            <a class="text-link desktop-link" href="#ayuda">Ver todos los apoyos <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="care-grid">
-            <button class="care-card" type="button" aria-pressed="false" data-care="Transporte adaptado">
-              <span class="care-illustration care-transport" aria-hidden="true"><span class="illustration-sun"></span><span class="mini-van">▰</span><span class="wheel wheel-a"></span><span class="wheel wheel-b"></span></span>
-              <span class="care-card-title">Transporte adaptado</span><span class="care-card-copy">Muévete con más tranquilidad.</span><span class="care-card-action">Añadir a mis apoyos <span aria-hidden="true">+</span></span>
-            </button>
-            <button class="care-card" type="button" aria-pressed="false" data-care="Acompañamiento personal">
-              <span class="care-illustration care-person" aria-hidden="true"><span class="person-head"></span><span class="person-body"></span><span class="person-heart">♡</span></span>
-              <span class="care-card-title">Acompañamiento</span><span class="care-card-copy">Apoyo en tus actividades diarias.</span><span class="care-card-action">Añadir a mis apoyos <span aria-hidden="true">+</span></span>
-            </button>
-            <button class="care-card" type="button" aria-pressed="false" data-care="Alimentación">
-              <span class="care-illustration care-food" aria-hidden="true"><span class="food-plate">✿</span><span class="food-leaf">⌁</span></span>
-              <span class="care-card-title">Alimentación</span><span class="care-card-copy">Planifica comidas a tu gusto.</span><span class="care-card-action">Añadir a mis apoyos <span aria-hidden="true">+</span></span>
-            </button>
-            <button class="care-card" type="button" aria-pressed="false" data-care="Hogar accesible">
-              <span class="care-illustration care-home" aria-hidden="true"><span class="home-roof"></span><span class="home-body">⌂</span><span class="home-leaf">✳</span></span>
-              <span class="care-card-title">Hogar accesible</span><span class="care-card-copy">Un espacio más cómodo para ti.</span><span class="care-card-action">Añadir a mis apoyos <span aria-hidden="true">+</span></span>
-            </button>
-          </div>
-        </section>
-
-        <section class="support-banner" aria-labelledby="support-title">
-          <span class="support-flower" aria-hidden="true">✿</span>
-          <div><p class="eyebrow">EN COMPAÑÍA, TODO ES MÁS FÁCIL</p><h2 id="support-title">¿Quién forma parte de tu red?</h2><p>Elige cómo quieres usar CuidaMe. Esta opción solo personaliza tu experiencia.</p></div>
-          <div class="role-options" role="group" aria-label="¿Para quién es la ayuda?">
-            <button class="role-option is-selected" type="button" aria-pressed="true" data-role="Para mí"><span aria-hidden="true">☺</span> Para mí</button>
-            <button class="role-option" type="button" aria-pressed="false" data-role="Para un familiar"><span aria-hidden="true">♡</span> Para un familiar</button>
-            <button class="role-option" type="button" aria-pressed="false" data-role="Como profesional"><span aria-hidden="true">✳</span> Como profesional</button>
-          </div>
-        </section>
-
-        <div class="lower-grid">
-          <section id="agenda" class="panel agenda-panel" aria-labelledby="agenda-title">
-            <div class="panel-heading"><div><p class="eyebrow">UN DÍA A LA VEZ</p><h2 id="agenda-title">Lo que viene</h2></div><span class="date-pill">HOY · 26 NOV</span></div>
-            <div class="agenda-list" id="agenda-list">
-              <article class="agenda-item"><span class="agenda-time">09:30</span><span class="agenda-marker marker-teal" aria-hidden="true">♡</span><div class="agenda-copy"><strong>Un momento para ti</strong><small>Tu rutina de bienestar</small></div><span class="agenda-status">Personal</span></article>
-              <article class="agenda-item"><span class="agenda-time">11:00</span><span class="agenda-marker marker-gold" aria-hidden="true">▦</span><div class="agenda-copy"><strong>Revisar próximas citas</strong><small>Un recordatorio amable</small></div><span class="agenda-status">Recordatorio</span></article>
-              <article class="agenda-item"><span class="agenda-time">16:30</span><span class="agenda-marker marker-coral" aria-hidden="true">☏</span><div class="agenda-copy"><strong>Llamar a Ana</strong><small>Tu red de apoyo</small></div><span class="agenda-status">Personal</span></article>
-            </div>
-            <button id="add-reminder" class="add-reminder" type="button"><span aria-hidden="true">+</span> Añadir un recordatorio</button>
-          </section>
-
-          <section id="historia" class="panel story-panel" aria-labelledby="story-title">
-            <div class="story-topline"><span class="story-icon" aria-hidden="true">♡</span><span class="eyebrow">TU HISTORIA IMPORTA</span></div>
-            <h2 id="story-title">Lo que te hace ser tú.</h2>
-            <p>Tus gustos, tus logros y las pequeñas cosas que te hacen bien merecen un espacio propio.</p>
-            <div class="story-quote"><span aria-hidden="true">“</span><span>Mi historia la cuento yo, a mi manera.</span></div>
-            <a class="button button-outline" href="#perfil">Descubrir mi historia <span aria-hidden="true">→</span></a>
-            <span class="story-decoration" aria-hidden="true">✿</span>
-          </section>
+  <main id="contenido" class="landing-page">
+    <section class="landing-hero">
+      <div class="landing-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> UN ESPACIO HECHO PARA TI</p>
+        <h1>Tu apoyo,<br><span>siempre contigo.</span></h1>
+        <p>Una app pensada para personas con movilidad reducida, sus familias y profesionales. Organiza tu día y encuentra recursos para sentirte acompañado.</p>
+        <div class="welcome-actions">
+          <a class="button button-primary" href="html/inicio.html">Entrar como visitante <span aria-hidden="true">→</span></a>
+          <a class="button button-quiet" href="html/perfil.html">Descubrir mis apoyos</a>
         </div>
-
-        <section id="ayuda" class="help-row">
-          <div class="help-round" aria-hidden="true">?</div>
-          <div><h2>¿Necesitas una mano?</h2><p>Estamos aquí para orientarte cuando lo necesites.</p></div>
-          <a href="tel:112" class="button button-emergency">Emergencia · 112 <span aria-hidden="true">↗</span></a>
-        </section>
-
-        <section id="perfil" class="profile-panel" aria-labelledby="profile-title">
-          <div class="profile-panel-icon" aria-hidden="true">☺</div>
-          <div class="profile-panel-copy">
-            <p class="eyebrow">TU ESPACIO PERSONAL</p>
-            <h2 id="profile-title">Tu perfil, a tu ritmo.</h2>
-            <p>Estás usando CuidaMe: <strong id="role-summary">Para mí</strong>. Cambia la opción en cualquier momento.</p>
-          </div>
-          <span class="profile-local-note"><span aria-hidden="true">✦</span> Preferencias de esta sesión</span>
-        </section>
-
-        <footer class="footer"><span>CuidaMe <span aria-hidden="true">♡</span></span><span>Un apoyo cercano, con respeto y a tu ritmo.</span><a href="#perfil">Privacidad y preferencias</a></footer>
+        <a class="landing-guide-link" href="html/guia.html"><span class="play-icon" aria-hidden="true">▶</span> ¿Primera vez por aquí? Mira la guía</a>
       </div>
-    </main>
-  </div>
+      <div class="landing-image">
+        <img src="img/IMG_0583.png" alt="Ilustración de una familia acompañando a una persona con movilidad reducida">
+        <span class="landing-image-note">A tu ritmo, con respeto y cariño <span aria-hidden="true">♡</span></span>
+      </div>
+    </section>
 
-  <nav class="mobile-nav" aria-label="Navegación móvil">
-    <a class="mobile-nav-link is-active" href="#inicio" aria-current="page"><span aria-hidden="true">⌂</span><small>Inicio</small></a>
-    <a class="mobile-nav-link" href="#historia"><span aria-hidden="true">♡</span><small>Historia</small></a>
-    <a class="mobile-nav-link" href="#cuidados"><span aria-hidden="true">✳</span><small>Cuidados</small></a>
-    <a class="mobile-nav-link" href="#agenda"><span aria-hidden="true">▦</span><small>Agenda</small></a>
-    <a class="mobile-nav-link" href="#perfil"><span aria-hidden="true">○</span><small>Perfil</small></a>
-  </nav>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <section class="landing-features" aria-label="Qué encontrarás en CuidaMe">
+      <article><span aria-hidden="true">♿</span><h2>Apoyos a tu medida</h2><p>Explora recursos para las tareas de cada día.</p></article>
+      <article><span aria-hidden="true">▦</span><h2>Recordatorios</h2><p>Ten presentes las citas y cosas importantes.</p></article>
+      <article><span aria-hidden="true">♡</span><h2>Tu historia</h2><p>Un espacio para lo que te hace ser tú.</p></article>
+    </section>
+    <p class="prototype-note">Prototipo educativo: algunas opciones son solo una demostración y no guardan datos.</p>
+  </main>
   <script src="js/script.js" defer></script>
 </body>
 </html>
